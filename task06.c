@@ -3,7 +3,7 @@
 int order_line(int a, int b)
 {//ikki sonni ikubini topuvchi recurcive function
     if (b != 0)
-        return gcd(b, a % b);
+        return order_line(b, a % b);
         else
         {
             return a;
