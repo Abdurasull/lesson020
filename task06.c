@@ -1,9 +1,9 @@
 #include<stdio.h>
 
-int order_line(int a, int b)
+int Ekub(int a, int b)
 {//ikki sonni ikubini topuvchi recurcive function
     if (b != 0)
-        return order_line(b, a % b);
+        return Ekub(b, a % b);
         else
         {
             return a;
@@ -21,7 +21,7 @@ int main()
     printf("Ikki sonni kiriting: ");
     scanf("%d", &n1);
 
-    printf(" EKUBi: %d\n", order_line(n1, n2));
+    printf(" EKUBi: %d\n", Ekub(n1, n2));
 
     return 0;
 }
